@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+   int maca;
+   float preco1, preco2;
+   
+   printf ("Quantas maçãs você deseja?:");
+   scanf ("%d", &maca);
+   
+   if (maca <= 6) {
+     preco1 = maca * 0.30;
+     printf ("O seu pedido deu R$%.2f", preco1);
+    } else {
+         preco2 = maca * 0.25;
+         printf ("O seu pedido deu R$%.2f", preco2);
+     }
+
+    return 0;
+}
